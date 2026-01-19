@@ -192,6 +192,11 @@ a {
 .btn:hover {
   transform: translateY(-2px);
 }
+.btn-large {
+  padding: 1.1rem 1.5rem;
+  font-size: 1.05rem;
+  width: 100%;
+}
 
 .stats {
   display: grid;
@@ -462,6 +467,69 @@ a {
 .form-card .tiny {
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+.registration-highlight {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 188, 159, 0.08),
+    rgba(255, 255, 255, 0.98)
+  );
+  border: 2px solid rgba(102, 188, 159, 0.25);
+}
+
+.registration-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.registration-perks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.perk-item {
+  padding: 0.5rem 0.7rem;
+  background: rgba(102, 188, 159, 0.1);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0;
+}
+
+.checklist li {
+  padding: 0.5rem 0;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.info-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(239, 220, 89, 0.12);
+  border-left: 4px solid var(--accent-2);
+  border-radius: 8px;
+}
+
+.info-box strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--text);
+}
+
+.info-box p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .toast {
