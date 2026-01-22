@@ -16,14 +16,23 @@
 
 body {
   margin: 0;
-  font-family: "Sora", system-ui, -apple-system, sans-serif;
+  font-family:
+    "Sora",
+    system-ui,
+    -apple-system,
+    sans-serif;
   color: var(--text);
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 12% 18%,
       rgba(102, 188, 159, 0.18),
       transparent 32%
     ),
-    radial-gradient(circle at 78% 0%, rgba(239, 220, 89, 0.16), transparent 34%),
+    radial-gradient(
+      circle at 78% 0%,
+      rgba(239, 220, 89, 0.16),
+      transparent 34%
+    ),
     var(--bg);
   min-height: 100vh;
   line-height: 1.6;
@@ -39,7 +48,8 @@ a {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 22% 32%,
       rgba(102, 188, 159, 0.12),
       transparent 26%
@@ -98,7 +108,9 @@ a {
   padding: 0.55rem 0.85rem;
   border-radius: 999px;
   color: var(--muted);
-  transition: color 0.2s ease, background 0.2s ease;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
 }
 .nav-links a:hover {
   color: var(--text);
@@ -178,7 +190,10 @@ a {
   font-weight: 700;
   letter-spacing: 0.2px;
   cursor: pointer;
-  transition: transform 0.15s ease, background 0.2s ease, border 0.2s ease;
+  transition:
+    transform 0.15s ease,
+    background 0.2s ease,
+    border 0.2s ease;
 }
 .btn.primary {
   background: linear-gradient(120deg, var(--accent), #4fd2aa);
@@ -558,17 +573,19 @@ a {
 }
 
 .footer {
-  padding: 2rem 7vw 3rem;
+  padding: 2rem 7vw;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
   border-top: 1px solid var(--border);
   background: #ffffff;
 }
 .footer-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   color: var(--muted);
+  margin-left: auto;
 }
 .footer a {
   color: var(--text);
